@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11542"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+        <capability name="system font weights other than Regular or Bold" minToolsVersion="7.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner"/>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="c22-O7-iKe" customClass="PZConnectionItem">
+            <rect key="frame" x="0.0" y="0.0" width="420" height="42"/>
+            <autoresizingMask key="autoresizingMask" flexibleMinY="YES"/>
+            <subviews>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="hIW-hc-YLy" userLabel="connectionWho">
+                    <rect key="frame" x="0.0" y="25" width="37" height="17"/>
+                    <textFieldCell key="cell" lineBreakMode="truncatingTail" sendsActionOnEndEditing="YES" alignment="left" placeholderString="WHO" drawsBackground="YES" usesSingleLineMode="YES" id="lex-5q-Sex">
+                        <font key="font" metaFont="systemMedium" size="13"/>
+                        <color key="textColor" red="0.35843829719999998" green="0.29366709099999999" blue="0.22889588490000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </textFieldCell>
+                </textField>
+                <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="eEG-8Q-h7f" userLabel="connectionDescription">
+                    <rect key="frame" x="37" y="25" width="383" height="17"/>
+                    <textFieldCell key="cell" lineBreakMode="truncatingTail" sendsActionOnEndEditing="YES" alignment="left" placeholderString="DESCRIPTION" drawsBackground="YES" usesSingleLineMode="YES" id="YdV-6L-hE8">
+                        <font key="font" metaFont="systemThin" size="13"/>
+                        <color key="textColor" red="0.35843829719999998" green="0.29366709099999999" blue="0.22889588490000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="hT7-dh-mr5" userLabel="connectionType">
+                    <rect key="frame" x="0.0" y="12" width="30" height="13"/>
+                    <textFieldCell key="cell" lineBreakMode="truncatingTail" sendsActionOnEndEditing="YES" alignment="left" placeholderString="TYPE" drawsBackground="YES" usesSingleLineMode="YES" id="LIs-Gj-LsA">
+                        <font key="font" metaFont="systemThin" size="10"/>
+                        <color key="textColor" red="0.0" green="0.46713966839999999" blue="0.93427933669999996" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="pR2-Wh-aSN" userLabel="connectionFrom">
+                    <rect key="frame" x="30" y="12" width="33" height="13"/>
+                    <textFieldCell key="cell" lineBreakMode="truncatingTail" sendsActionOnEndEditing="YES" alignment="left" placeholderString="FROM" drawsBackground="YES" usesSingleLineMode="YES" id="5z4-0C-M1x">
+                        <font key="font" metaFont="systemThin" size="10"/>
+                        <color key="textColor" red="0.0" green="0.28099489799999999" blue="0.56198979589999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </textFieldCell>
+                </textField>
+                <customView translatesAutoresizingMaskIntoConstraints="NO" id="m7q-0g-muo" userLabel="kickButton" customClass="PZConnectionKickButton" customModule="SynoTool" customModuleProvider="target">
+                    <rect key="frame" x="398" y="15" width="20" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="20" id="5oA-Uv-7Mz"/>
+                        <constraint firstAttribute="height" constant="20" id="fP3-3Y-lG3"/>
+                    </constraints>
+                </customView>
+            </subviews>
+            <constraints>
+                <constraint firstItem="hIW-hc-YLy" firstAttribute="leading" secondItem="c22-O7-iKe" secondAttribute="leading" id="2VJ-s4-EhU"/>
+                <constraint firstItem="hIW-hc-YLy" firstAttribute="top" secondItem="c22-O7-iKe" secondAttribute="top" id="4JG-DL-nzg"/>
+                <constraint firstItem="hT7-dh-mr5" firstAttribute="leading" secondItem="c22-O7-iKe" secondAttribute="leading" id="CL1-Fw-ivo"/>
+                <constraint firstAttribute="trailing" secondItem="eEG-8Q-h7f" secondAttribute="trailing" id="H3q-cV-MwP"/>
+                <constraint firstItem="pR2-Wh-aSN" firstAttribute="leading" secondItem="hT7-dh-mr5" secondAttribute="trailing" id="ScR-Zm-ce2"/>
+                <constraint firstItem="eEG-8Q-h7f" firstAttribute="top" secondItem="c22-O7-iKe" secondAttribute="top" id="SgL-VO-DGs"/>
+                <constraint firstAttribute="trailing" secondItem="m7q-0g-muo" secondAttribute="trailing" constant="2" id="WKn-aN-sDO"/>
+                <constraint firstItem="hT7-dh-mr5" firstAttribute="top" secondItem="hIW-hc-YLy" secondAttribute="bottom" id="YX8-er-ztY"/>
+                <constraint firstAttribute="centerY" secondItem="m7q-0g-muo" secondAttribute="centerY" constant="4" id="f5e-Qm-9sX"/>
+                <constraint firstItem="pR2-Wh-aSN" firstAttribute="top" secondItem="hIW-hc-YLy" secondAttribute="bottom" id="j2Q-lT-pwA"/>
+                <constraint firstItem="eEG-8Q-h7f" firstAttribute="leading" secondItem="hIW-hc-YLy" secondAttribute="trailing" id="yC5-ll-urq"/>
+            </constraints>
+            <connections>
+                <outlet property="connectionDescriptionLabel" destination="eEG-8Q-h7f" id="vAr-hZ-dTP"/>
+                <outlet property="connectionFromLabel" destination="pR2-Wh-aSN" id="vAY-1V-Hgf"/>
+                <outlet property="connectionTypeLabel" destination="hT7-dh-mr5" id="tfT-M0-oz4"/>
+                <outlet property="connectionWhoLabel" destination="hIW-hc-YLy" id="BIK-9p-bl8"/>
+                <outlet property="kickButton" destination="m7q-0g-muo" id="DCK-G5-rPB"/>
+            </connections>
+            <point key="canvasLocation" x="-142" y="-9"/>
+        </customView>
+    </objects>
+</document>

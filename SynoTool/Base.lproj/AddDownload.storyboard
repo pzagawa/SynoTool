@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11542"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--AddDownloadTaskWindow-->
+        <scene sceneID="qXN-VZ-97e">
+            <objects>
+                <windowController storyboardIdentifier="addDownloadTaskWindowController" showSeguePresentationStyle="single" id="Us9-gd-mly" userLabel="AddDownloadTaskWindow" sceneMemberID="viewController">
+                    <window key="window" title="Add Download Task" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" id="8kQ-p1-BjK">
+                        <windowStyleMask key="styleMask" titled="YES"/>
+                        <rect key="contentRect" x="320" y="343" width="480" height="270"/>
+                        <rect key="screenRect" x="0.0" y="0.0" width="2048" height="1130"/>
+                    </window>
+                    <connections>
+                        <segue destination="FEA-44-WNm" kind="relationship" relationship="window.shadowedContentViewController" id="co6-Xc-sMN"/>
+                    </connections>
+                </windowController>
+                <customObject id="hlV-VL-EE3" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="687" y="251"/>
+        </scene>
+        <!--AddDownloadTaskViewController-->
+        <scene sceneID="jph-Y0-XTD">
+            <objects>
+                <viewController storyboardIdentifier="addDownloadTaskViewController" id="FEA-44-WNm" userLabel="AddDownloadTaskViewController" customClass="PZAddDownloadViewController" customModule="SynoTool" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" id="Eyr-NV-s9Y">
+                        <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="EMH-GX-cfL" userLabel="appIcon">
+                                <rect key="frame" x="20" y="183" width="80" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="Fu3-HC-fay"/>
+                                    <constraint firstAttribute="height" constant="80" id="R3k-3p-YVy"/>
+                                </constraints>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyUpOrDown" image="synotool-appicon" id="3ks-4e-ZJz"/>
+                            </imageView>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="n1r-Jh-p4d" userLabel="appTitle">
+                                <rect key="frame" x="118" y="230" width="344" height="24"/>
+                                <textFieldCell key="cell" lineBreakMode="truncatingTail" sendsActionOnEndEditing="YES" title="SYNOTOOL" usesSingleLineMode="YES" id="j2G-nu-cb7">
+                                    <font key="font" metaFont="system" size="20"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="xGG-dB-vVd" userLabel="urlHead">
+                                <rect key="frame" x="118" y="203" width="272" height="17"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Enter URL to download by Download Station" id="tNN-Ay-dVi">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="cEG-A8-8qn" userLabel="pasteButton">
+                                <rect key="frame" x="416" y="201" width="44" height="17"/>
+                                <buttonCell key="cell" type="inline" title="paste" bezelStyle="inline" alignment="center" borderStyle="border" inset="2" id="Bvd-BA-gNI">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="smallSystemBold"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="onPasteClick:" target="FEA-44-WNm" id="dg4-8k-NoD"/>
+                                </connections>
+                            </button>
+                            <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="Gv2-2A-At9" userLabel="urlEdit">
+                                <rect key="frame" x="120" y="63" width="340" height="134"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="134" id="5ip-PR-VyI"/>
+                                </constraints>
+                                <textFieldCell key="cell" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" alignment="left" drawsBackground="YES" id="hqg-Vo-oMf">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                                <connections>
+                                    <action selector="onUrlTextUpdate:" target="FEA-44-WNm" id="e2Y-7d-MKG"/>
+                                    <outlet property="delegate" destination="FEA-44-WNm" id="cZO-lB-Lic"/>
+                                </connections>
+                            </textField>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="T5a-VS-gNc" userLabel="cancelButton">
+                                <rect key="frame" x="256" y="13" width="82" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="70" id="IjE-zk-TD2"/>
+                                </constraints>
+                                <buttonCell key="cell" type="push" title="Cancel" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="WjH-21-yqJ">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                    <string key="keyEquivalent" base64-UTF8="YES">
+Gw
+</string>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="onCancelClick:" target="FEA-44-WNm" id="m8V-c9-hY3"/>
+                                </connections>
+                            </button>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="BLh-2b-fBZ" userLabel="addDownloadButton">
+                                <rect key="frame" x="338" y="13" width="128" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="116" id="ZY1-Qb-unZ"/>
+                                </constraints>
+                                <buttonCell key="cell" type="push" title="Add Download" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="F91-kr-kxd">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                    <string key="keyEquivalent" base64-UTF8="YES">
+DQ
+</string>
+                                </buttonCell>
+                                <connections>
+                                    <segue destination="Nrp-v4-tCa" kind="sheet" id="PYO-FV-lVT"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="Gv2-2A-At9" firstAttribute="leading" secondItem="xGG-dB-vVd" secondAttribute="leading" id="ECo-Kw-j0C"/>
+                            <constraint firstItem="BLh-2b-fBZ" firstAttribute="leading" secondItem="T5a-VS-gNc" secondAttribute="trailing" constant="12" id="KoC-WT-ZBd"/>
+                            <constraint firstItem="xGG-dB-vVd" firstAttribute="top" secondItem="n1r-Jh-p4d" secondAttribute="bottom" constant="10" id="Moa-YA-xZY"/>
+                            <constraint firstAttribute="trailing" secondItem="Gv2-2A-At9" secondAttribute="trailing" constant="20" id="Oyh-Ni-gp1"/>
+                            <constraint firstAttribute="trailing" secondItem="n1r-Jh-p4d" secondAttribute="trailing" constant="20" id="RMJ-PU-00g"/>
+                            <constraint firstItem="EMH-GX-cfL" firstAttribute="leading" secondItem="Eyr-NV-s9Y" secondAttribute="leading" constant="20" id="TW9-iD-cgm"/>
+                            <constraint firstAttribute="bottom" secondItem="BLh-2b-fBZ" secondAttribute="bottom" constant="20" id="UtZ-Yf-BPq"/>
+                            <constraint firstItem="cEG-A8-8qn" firstAttribute="baseline" secondItem="xGG-dB-vVd" secondAttribute="baseline" id="ffU-T1-8Z8"/>
+                            <constraint firstAttribute="trailing" secondItem="cEG-A8-8qn" secondAttribute="trailing" constant="20" id="fke-76-RqX"/>
+                            <constraint firstAttribute="trailing" secondItem="BLh-2b-fBZ" secondAttribute="trailing" constant="20" id="k5V-Aw-cwZ"/>
+                            <constraint firstItem="xGG-dB-vVd" firstAttribute="leading" secondItem="n1r-Jh-p4d" secondAttribute="leading" id="pDq-JD-2Rx"/>
+                            <constraint firstItem="EMH-GX-cfL" firstAttribute="top" secondItem="Eyr-NV-s9Y" secondAttribute="top" constant="7" id="s7i-QL-BM3"/>
+                            <constraint firstItem="n1r-Jh-p4d" firstAttribute="leading" secondItem="EMH-GX-cfL" secondAttribute="trailing" constant="20" id="tjE-l4-W4u"/>
+                            <constraint firstItem="Gv2-2A-At9" firstAttribute="top" secondItem="xGG-dB-vVd" secondAttribute="bottom" constant="6" id="ut3-UI-mJ5"/>
+                            <constraint firstAttribute="bottom" secondItem="T5a-VS-gNc" secondAttribute="bottom" constant="20" id="vTY-Hd-ht5"/>
+                            <constraint firstItem="n1r-Jh-p4d" firstAttribute="top" secondItem="Eyr-NV-s9Y" secondAttribute="top" constant="16" id="vk9-Yp-Bm4"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="addDownloadButton" destination="BLh-2b-fBZ" id="KK3-tV-U7f"/>
+                        <outlet property="appTitleLabel" destination="n1r-Jh-p4d" id="TQY-5j-Qre"/>
+                        <outlet property="cancelButton" destination="T5a-VS-gNc" id="BkB-lH-QU9"/>
+                        <outlet property="urlEdit" destination="Gv2-2A-At9" id="4jx-n0-9h6"/>
+                    </connections>
+                </viewController>
+                <customObject id="sCR-qx-F31" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="687" y="786"/>
+        </scene>
+        <!--Add Download Execute View Controller-->
+        <scene sceneID="NZi-vH-riJ">
+            <objects>
+                <viewController id="Nrp-v4-tCa" customClass="PZAddDownloadExecuteViewController" customModule="SynoTool" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" id="MEj-SJ-yFQ">
+                        <rect key="frame" x="0.0" y="0.0" width="370" height="170"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <imageView hidden="YES" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="R8r-Ua-QYx" userLabel="statusIconCaution">
+                                <rect key="frame" x="18" y="114" width="32" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="32" id="381-eL-ykI"/>
+                                    <constraint firstAttribute="width" constant="32" id="Tc8-xI-lDT"/>
+                                </constraints>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="NSCaution" id="YFe-3y-ElY"/>
+                            </imageView>
+                            <imageView hidden="YES" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="x86-kG-Vld" userLabel="statusIconInfo">
+                                <rect key="frame" x="18" y="111" width="32" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="32" id="Yt7-oK-Z4P"/>
+                                    <constraint firstAttribute="height" constant="32" id="j32-gY-tl8"/>
+                                </constraints>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="NSInfo" id="T4V-71-iqk"/>
+                            </imageView>
+                            <progressIndicator hidden="YES" wantsLayer="YES" horizontalHuggingPriority="750" verticalHuggingPriority="750" maxValue="100" displayedWhenStopped="NO" bezeled="NO" indeterminate="YES" controlSize="small" style="spinning" translatesAutoresizingMaskIntoConstraints="NO" id="WWi-W4-Zqy" userLabel="operationProgress">
+                                <rect key="frame" x="26" y="118" width="16" height="16"/>
+                            </progressIndicator>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="UCl-vH-KPV" userLabel="statusLabel">
+                                <rect key="frame" x="60" y="119" width="296" height="17"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="292" id="ObQ-bJ-IiN"/>
+                                </constraints>
+                                <textFieldCell key="cell" lineBreakMode="truncatingTail" sendsActionOnEndEditing="YES" placeholderString="STATUS" id="A3J-mM-hIX">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField hidden="YES" horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="HAc-kw-af3" userLabel="informationLabel">
+                                <rect key="frame" x="60" y="88" width="296" height="17"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="292" id="sRj-PN-bd8"/>
+                                </constraints>
+                                <textFieldCell key="cell" lineBreakMode="truncatingTail" sendsActionOnEndEditing="YES" placeholderString="information" usesSingleLineMode="YES" id="Wg0-sB-XJi">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="ABz-Tf-hxg" userLabel="closeButton">
+                                <rect key="frame" x="281" y="13" width="75" height="32"/>
+                                <buttonCell key="cell" type="push" title="Close" bezelStyle="rounded" alignment="center" enabled="NO" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="gsf-Pt-bda">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                    <string key="keyEquivalent" base64-UTF8="YES">
+Gw
+</string>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="onCloseButtonClick:" target="Nrp-v4-tCa" id="2yB-YF-sE7"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="WWi-W4-Zqy" firstAttribute="centerY" secondItem="R8r-Ua-QYx" secondAttribute="centerY" constant="4" id="3gV-6J-ByT"/>
+                            <constraint firstItem="x86-kG-Vld" firstAttribute="centerX" secondItem="R8r-Ua-QYx" secondAttribute="centerX" id="Bip-II-fPx"/>
+                            <constraint firstItem="HAc-kw-af3" firstAttribute="leading" secondItem="UCl-vH-KPV" secondAttribute="leading" id="FON-Bj-hUJ"/>
+                            <constraint firstItem="x86-kG-Vld" firstAttribute="centerY" secondItem="R8r-Ua-QYx" secondAttribute="centerY" constant="3" id="Gpd-8e-Xdm"/>
+                            <constraint firstItem="R8r-Ua-QYx" firstAttribute="leading" secondItem="MEj-SJ-yFQ" secondAttribute="leading" constant="18" id="Ird-04-u4o"/>
+                            <constraint firstAttribute="bottom" secondItem="ABz-Tf-hxg" secondAttribute="bottom" constant="20" id="LqX-FF-DKU"/>
+                            <constraint firstItem="R8r-Ua-QYx" firstAttribute="top" secondItem="MEj-SJ-yFQ" secondAttribute="top" constant="24" id="RAf-9c-7jU"/>
+                            <constraint firstItem="WWi-W4-Zqy" firstAttribute="centerX" secondItem="R8r-Ua-QYx" secondAttribute="centerX" id="Tz1-sK-aGb"/>
+                            <constraint firstItem="UCl-vH-KPV" firstAttribute="centerY" secondItem="WWi-W4-Zqy" secondAttribute="centerY" constant="-1" id="VDc-hH-rDi"/>
+                            <constraint firstItem="HAc-kw-af3" firstAttribute="top" secondItem="UCl-vH-KPV" secondAttribute="bottom" constant="14" id="neO-cg-Z6a"/>
+                            <constraint firstAttribute="trailing" secondItem="ABz-Tf-hxg" secondAttribute="trailing" constant="20" id="y8a-pq-nwN"/>
+                            <constraint firstItem="UCl-vH-KPV" firstAttribute="leading" secondItem="R8r-Ua-QYx" secondAttribute="trailing" constant="12" id="yLk-3X-Cp9"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="closeButton" destination="ABz-Tf-hxg" id="7mC-07-YAS"/>
+                        <outlet property="informationLabel" destination="HAc-kw-af3" id="rQ6-tx-W2n"/>
+                        <outlet property="operationProgress" destination="WWi-W4-Zqy" id="dmw-Sz-eeX"/>
+                        <outlet property="statusIconCaution" destination="R8r-Ua-QYx" id="Tzv-vW-Dpk"/>
+                        <outlet property="statusIconInfo" destination="x86-kG-Vld" id="40e-Ts-wtF"/>
+                        <outlet property="statusLabel" destination="UCl-vH-KPV" id="Duv-Sg-rs3"/>
+                    </connections>
+                </viewController>
+                <customObject id="hy1-sR-uH2" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="687" y="1242"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="NSCaution" width="32" height="32"/>
+        <image name="NSInfo" width="32" height="32"/>
+        <image name="synotool-appicon" width="128" height="128"/>
+    </resources>
+</document>

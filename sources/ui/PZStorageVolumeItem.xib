@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11542"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+        <capability name="system font weights other than Regular or Bold" minToolsVersion="7.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner"/>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="c22-O7-iKe" customClass="PZStorageVolumeItem">
+            <rect key="frame" x="0.0" y="0.0" width="420" height="52"/>
+            <autoresizingMask key="autoresizingMask" flexibleMinY="YES"/>
+            <subviews>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="hIW-hc-YLy" userLabel="volumeName">
+                    <rect key="frame" x="266" y="35" width="101" height="17"/>
+                    <textFieldCell key="cell" lineBreakMode="truncatingTail" sendsActionOnEndEditing="YES" alignment="left" placeholderString="VOLUME NAME" drawsBackground="YES" usesSingleLineMode="YES" id="lex-5q-Sex">
+                        <font key="font" metaFont="systemMedium" size="13"/>
+                        <color key="textColor" red="0.35843829719999998" green="0.29366709099999999" blue="0.22889588490000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="eEG-8Q-h7f" userLabel="volumeStatus">
+                    <rect key="frame" x="367" y="35" width="53" height="17"/>
+                    <textFieldCell key="cell" lineBreakMode="truncatingTail" sendsActionOnEndEditing="YES" alignment="right" placeholderString="STATUS" drawsBackground="YES" usesSingleLineMode="YES" id="YdV-6L-hE8">
+                        <font key="font" metaFont="systemThin" size="13"/>
+                        <color key="textColor" red="0.35843829719999998" green="0.29366709099999999" blue="0.22889588490000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </textFieldCell>
+                </textField>
+                <customView horizontalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="uud-mE-36R" userLabel="volumeSizeBar" customClass="PZProgressBar" customModule="SynoTool" customModuleProvider="target">
+                    <rect key="frame" x="2" y="26" width="416" height="8"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="8" id="L2j-jp-qSY"/>
+                    </constraints>
+                </customView>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="pR2-Wh-aSN" userLabel="volumeUsedSize">
+                    <rect key="frame" x="0.0" y="9" width="39" height="17"/>
+                    <textFieldCell key="cell" lineBreakMode="truncatingTail" sendsActionOnEndEditing="YES" alignment="left" title="USED" placeholderString="" drawsBackground="YES" usesSingleLineMode="YES" id="5z4-0C-M1x">
+                        <font key="font" metaFont="systemThin" size="13"/>
+                        <color key="textColor" red="0.35843829719999998" green="0.29366709099999999" blue="0.22889588490000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="mm9-wK-wmK" userLabel="volumeTotalSize">
+                    <rect key="frame" x="376" y="9" width="44" height="17"/>
+                    <textFieldCell key="cell" lineBreakMode="truncatingTail" sendsActionOnEndEditing="YES" alignment="right" title="TOTAL" placeholderString="" drawsBackground="YES" usesSingleLineMode="YES" id="kUO-UN-c9K">
+                        <font key="font" metaFont="systemThin" size="13"/>
+                        <color key="textColor" red="0.35843829719999998" green="0.29366709099999999" blue="0.22889588490000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="hT7-dh-mr5" userLabel="volumeUsedPercent">
+                    <rect key="frame" x="201" y="9" width="19" height="17"/>
+                    <textFieldCell key="cell" lineBreakMode="truncatingTail" sendsActionOnEndEditing="YES" alignment="center" title="%" placeholderString="" drawsBackground="YES" usesSingleLineMode="YES" id="LIs-Gj-LsA">
+                        <font key="font" metaFont="systemMedium" size="13"/>
+                        <color key="textColor" red="0.35843829719999998" green="0.29366709099999999" blue="0.22889588490000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </textFieldCell>
+                </textField>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="eEG-8Q-h7f" secondAttribute="trailing" id="6df-Qm-1YT"/>
+                <constraint firstItem="eEG-8Q-h7f" firstAttribute="top" secondItem="c22-O7-iKe" secondAttribute="top" id="798-6q-FIm"/>
+                <constraint firstItem="hT7-dh-mr5" firstAttribute="top" secondItem="uud-mE-36R" secondAttribute="bottom" id="LRu-Qo-FuJ"/>
+                <constraint firstItem="uud-mE-36R" firstAttribute="top" secondItem="hIW-hc-YLy" secondAttribute="bottom" constant="1" id="Swp-3S-Ou2"/>
+                <constraint firstItem="pR2-Wh-aSN" firstAttribute="top" secondItem="uud-mE-36R" secondAttribute="bottom" id="Tr9-zM-t07"/>
+                <constraint firstItem="hIW-hc-YLy" firstAttribute="top" secondItem="c22-O7-iKe" secondAttribute="top" id="W6B-Ba-wrg"/>
+                <constraint firstItem="uud-mE-36R" firstAttribute="leading" secondItem="c22-O7-iKe" secondAttribute="leading" constant="2" id="X1a-Il-zSu"/>
+                <constraint firstItem="mm9-wK-wmK" firstAttribute="top" secondItem="uud-mE-36R" secondAttribute="bottom" id="bp3-hU-Pss"/>
+                <constraint firstItem="hT7-dh-mr5" firstAttribute="centerX" secondItem="c22-O7-iKe" secondAttribute="centerX" id="ewz-ZR-wiI"/>
+                <constraint firstItem="pR2-Wh-aSN" firstAttribute="leading" secondItem="c22-O7-iKe" secondAttribute="leading" id="kaO-fq-lhv"/>
+                <constraint firstItem="eEG-8Q-h7f" firstAttribute="leading" secondItem="hIW-hc-YLy" secondAttribute="trailing" id="lcv-w9-B4j"/>
+                <constraint firstAttribute="trailing" secondItem="uud-mE-36R" secondAttribute="trailing" constant="2" id="nwK-Ii-Yff"/>
+                <constraint firstAttribute="trailing" secondItem="mm9-wK-wmK" secondAttribute="trailing" id="unn-6Q-4wr"/>
+            </constraints>
+            <connections>
+                <outlet property="volumeNameLabel" destination="hIW-hc-YLy" id="OTu-jB-tk4"/>
+                <outlet property="volumeSizeBar" destination="uud-mE-36R" id="gFE-bT-0p9"/>
+                <outlet property="volumeStatusLabel" destination="eEG-8Q-h7f" id="gha-4S-1Aa"/>
+                <outlet property="volumeTotalSizeLabel" destination="mm9-wK-wmK" id="Dxj-80-94h"/>
+                <outlet property="volumeUsedPercentLabel" destination="hT7-dh-mr5" id="JzX-ls-hMS"/>
+                <outlet property="volumeUsedSizeLabel" destination="pR2-Wh-aSN" id="qSq-eU-1Kl"/>
+            </connections>
+            <point key="canvasLocation" x="97" y="18"/>
+        </customView>
+    </objects>
+</document>

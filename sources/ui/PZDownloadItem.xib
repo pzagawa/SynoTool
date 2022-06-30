@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11542"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+        <capability name="system font weights other than Regular or Bold" minToolsVersion="7.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner"/>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="c22-O7-iKe" customClass="PZDownloadItem">
+            <rect key="frame" x="0.0" y="0.0" width="420" height="60"/>
+            <autoresizingMask key="autoresizingMask" flexibleMinY="YES"/>
+            <subviews>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="hT7-dh-mr5" userLabel="downloadType">
+                    <rect key="frame" x="0.0" y="43" width="36" height="17"/>
+                    <textFieldCell key="cell" lineBreakMode="truncatingTail" sendsActionOnEndEditing="YES" alignment="right" placeholderString="TYPE" drawsBackground="YES" usesSingleLineMode="YES" id="LIs-Gj-LsA">
+                        <font key="font" metaFont="systemThin" size="13"/>
+                        <color key="textColor" red="0.80654097577142858" green="0.6607958579686527" blue="0.51505074039089205" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </textFieldCell>
+                </textField>
+                <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="hIW-hc-YLy" userLabel="downloadTitle">
+                    <rect key="frame" x="36" y="43" width="384" height="17"/>
+                    <textFieldCell key="cell" lineBreakMode="truncatingTail" sendsActionOnEndEditing="YES" alignment="left" placeholderString="TITLE" drawsBackground="YES" usesSingleLineMode="YES" id="lex-5q-Sex">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" red="0.35843829719999998" green="0.29366709099999999" blue="0.22889588490000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </textFieldCell>
+                </textField>
+                <customView horizontalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cd9-H1-xFL" userLabel="downloadSizeBar" customClass="PZProgressBar" customModule="SynoTool" customModuleProvider="target">
+                    <rect key="frame" x="2" y="35" width="416" height="6"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="6" id="hNt-d1-roA"/>
+                    </constraints>
+                </customView>
+                <customView translatesAutoresizingMaskIntoConstraints="NO" id="m7q-0g-muo" userLabel="resumeButton" customClass="PZDownloadResumeButton" customModule="SynoTool" customModuleProvider="target">
+                    <rect key="frame" x="2" y="15" width="16" height="16"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="16" id="5oA-Uv-7Mz"/>
+                        <constraint firstAttribute="height" constant="16" id="fP3-3Y-lG3"/>
+                    </constraints>
+                </customView>
+                <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="jEe-oo-Lyi" userLabel="downloadStatus">
+                    <rect key="frame" x="22" y="17" width="43" height="13"/>
+                    <textFieldCell key="cell" lineBreakMode="truncatingTail" sendsActionOnEndEditing="YES" alignment="left" placeholderString="STATUS" drawsBackground="YES" usesSingleLineMode="YES" id="S8e-hH-R6I">
+                        <font key="font" metaFont="systemThin" size="10"/>
+                        <color key="textColor" red="0.35843829719999998" green="0.29366709099999999" blue="0.22889588490000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="pR2-Wh-aSN" userLabel="downloadFileSizeCompleted">
+                    <rect key="frame" x="338" y="16" width="28" height="13"/>
+                    <textFieldCell key="cell" lineBreakMode="truncatingTail" sendsActionOnEndEditing="YES" alignment="left" title="0 GB" placeholderString="" drawsBackground="YES" usesSingleLineMode="YES" id="5z4-0C-M1x">
+                        <font key="font" metaFont="systemThin" size="10"/>
+                        <color key="textColor" red="0.0" green="0.50196081400000003" blue="0.25098040700000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </textFieldCell>
+                </textField>
+                <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="eEG-8Q-h7f" userLabel="downloadFileSize">
+                    <rect key="frame" x="370" y="16" width="28" height="13"/>
+                    <textFieldCell key="cell" lineBreakMode="truncatingTail" sendsActionOnEndEditing="YES" alignment="right" title="0 GB" placeholderString="DESCRIPTION" drawsBackground="YES" usesSingleLineMode="YES" id="YdV-6L-hE8">
+                        <font key="font" metaFont="systemThin" size="10"/>
+                        <color key="textColor" red="0.35843829719999998" green="0.29366709099999999" blue="0.22889588490000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </textFieldCell>
+                </textField>
+                <customView translatesAutoresizingMaskIntoConstraints="NO" id="9dr-Ag-3VH" userLabel="deleteButton" customClass="PZDownloadDeleteButton" customModule="SynoTool" customModuleProvider="target">
+                    <rect key="frame" x="402" y="15" width="16" height="16"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="16" id="AT6-eA-6Ih"/>
+                        <constraint firstAttribute="width" constant="16" id="Fwo-ED-ZLd"/>
+                    </constraints>
+                </customView>
+            </subviews>
+            <constraints>
+                <constraint firstItem="hIW-hc-YLy" firstAttribute="top" secondItem="c22-O7-iKe" secondAttribute="top" id="2V6-Vw-Nc4"/>
+                <constraint firstItem="pR2-Wh-aSN" firstAttribute="baseline" secondItem="eEG-8Q-h7f" secondAttribute="baseline" id="2uj-FV-ehP"/>
+                <constraint firstItem="m7q-0g-muo" firstAttribute="leading" secondItem="c22-O7-iKe" secondAttribute="leading" constant="2" id="AYY-FJ-ABe"/>
+                <constraint firstAttribute="trailing" secondItem="9dr-Ag-3VH" secondAttribute="trailing" constant="2" id="E4d-mP-b8Y"/>
+                <constraint firstItem="jEe-oo-Lyi" firstAttribute="leading" secondItem="m7q-0g-muo" secondAttribute="trailing" constant="4" id="HWk-Hg-SQR"/>
+                <constraint firstItem="m7q-0g-muo" firstAttribute="top" secondItem="cd9-H1-xFL" secondAttribute="bottom" constant="4" id="J0e-JC-LFf"/>
+                <constraint firstItem="9dr-Ag-3VH" firstAttribute="leading" secondItem="eEG-8Q-h7f" secondAttribute="trailing" constant="4" id="KaA-ev-NqL"/>
+                <constraint firstItem="hIW-hc-YLy" firstAttribute="leading" secondItem="hT7-dh-mr5" secondAttribute="trailing" id="SPR-Sa-yJG"/>
+                <constraint firstItem="cd9-H1-xFL" firstAttribute="leading" secondItem="c22-O7-iKe" secondAttribute="leading" constant="2" id="WJT-Ge-Jgp"/>
+                <constraint firstItem="9dr-Ag-3VH" firstAttribute="top" secondItem="cd9-H1-xFL" secondAttribute="bottom" constant="4" id="a1s-p6-Mef"/>
+                <constraint firstItem="hT7-dh-mr5" firstAttribute="top" secondItem="c22-O7-iKe" secondAttribute="top" id="ajS-gX-0Mk"/>
+                <constraint firstItem="eEG-8Q-h7f" firstAttribute="leading" secondItem="pR2-Wh-aSN" secondAttribute="trailing" constant="4" id="cDg-06-980"/>
+                <constraint firstItem="hT7-dh-mr5" firstAttribute="leading" secondItem="c22-O7-iKe" secondAttribute="leading" id="cHl-4l-s2X"/>
+                <constraint firstAttribute="trailing" secondItem="hIW-hc-YLy" secondAttribute="trailing" id="e9I-nH-jsQ"/>
+                <constraint firstItem="jEe-oo-Lyi" firstAttribute="centerY" secondItem="m7q-0g-muo" secondAttribute="centerY" id="qIq-RS-tfs"/>
+                <constraint firstAttribute="trailing" secondItem="cd9-H1-xFL" secondAttribute="trailing" constant="2" id="qgb-W9-lzC"/>
+                <constraint firstItem="eEG-8Q-h7f" firstAttribute="centerY" secondItem="9dr-Ag-3VH" secondAttribute="centerY" id="rgo-qo-J06"/>
+                <constraint firstItem="cd9-H1-xFL" firstAttribute="top" secondItem="hIW-hc-YLy" secondAttribute="bottom" constant="2" id="uML-Oy-UvV"/>
+            </constraints>
+            <connections>
+                <outlet property="deleteButton" destination="9dr-Ag-3VH" id="V8v-9n-QHz"/>
+                <outlet property="downloadCompletedBar" destination="cd9-H1-xFL" id="NSt-eD-Htn"/>
+                <outlet property="fileSizeCompletedLabel" destination="pR2-Wh-aSN" id="JRa-8r-hLa"/>
+                <outlet property="fileSizeLabel" destination="eEG-8Q-h7f" id="zuS-ko-UYQ"/>
+                <outlet property="resumeButton" destination="m7q-0g-muo" id="yGF-z9-ink"/>
+                <outlet property="statusLabel" destination="jEe-oo-Lyi" id="81l-wB-yYU"/>
+                <outlet property="titleLabel" destination="hIW-hc-YLy" id="7xc-M0-EgD"/>
+                <outlet property="typeLabel" destination="hT7-dh-mr5" id="JRh-u0-fgL"/>
+            </connections>
+            <point key="canvasLocation" x="-395" y="36"/>
+        </customView>
+    </objects>
+</document>

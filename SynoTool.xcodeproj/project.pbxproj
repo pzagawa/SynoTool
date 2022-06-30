@@ -1,0 +1,798 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AE0EF32D1DA2F8C6004834C8 /* PZMainBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0EF32C1DA2F8C6004834C8 /* PZMainBackgroundView.swift */; };
+		AE0EF32F1DA3126E004834C8 /* PZButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0EF32E1DA3126E004834C8 /* PZButtonView.swift */; };
+		AE13F5E81DF80F9900579099 /* PZSynchronized.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE13F5E71DF80F9900579099 /* PZSynchronized.swift */; };
+		AE13F5EE1DF84D9D00579099 /* ServiceManagement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE13F5ED1DF84D9D00579099 /* ServiceManagement.framework */; };
+		AE14E67D1D919B750096BB45 /* PZSynoAuthObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE14E67C1D919B750096BB45 /* PZSynoAuthObject.swift */; };
+		AE14E67F1D91BAA90096BB45 /* PZSynoEmptyObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE14E67E1D91BAA90096BB45 /* PZSynoEmptyObject.swift */; };
+		AE1FABD91E05B1DE005354DB /* PZAuthData.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE1FABD81E05B1DE005354DB /* PZAuthData.swift */; };
+		AE2229E31DCFC0AB00F4AF49 /* PZVolumesItemsContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2229E21DCFC0AB00F4AF49 /* PZVolumesItemsContainer.swift */; };
+		AE22D3801DA592920090FCE0 /* PZSettingsMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE22D37F1DA592920090FCE0 /* PZSettingsMenu.swift */; };
+		AE29005C1DFA0D520073CAC2 /* PZAppConsts.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE37A46B1D8ED1B8004E42BE /* PZAppConsts.swift */; };
+		AE37A44D1D8ED065004E42BE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE37A44C1D8ED065004E42BE /* AppDelegate.swift */; };
+		AE37A44F1D8ED065004E42BE /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE37A44E1D8ED065004E42BE /* MainViewController.swift */; };
+		AE37A4511D8ED065004E42BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE37A4501D8ED065004E42BE /* Assets.xcassets */; };
+		AE37A4541D8ED065004E42BE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE37A4521D8ED065004E42BE /* Main.storyboard */; };
+		AE37A4701D8ED1B8004E42BE /* PZAppConsts.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE37A46B1D8ED1B8004E42BE /* PZAppConsts.swift */; };
+		AE37A4711D8ED1B8004E42BE /* PZAppPrefs.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE37A46C1D8ED1B8004E42BE /* PZAppPrefs.swift */; };
+		AE37A4721D8ED1B8004E42BE /* PZStringUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE37A46D1D8ED1B8004E42BE /* PZStringUtils.swift */; };
+		AE37A4731D8ED1B8004E42BE /* PZSynoAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE37A46E1D8ED1B8004E42BE /* PZSynoAPI.swift */; };
+		AE37A4741D8ED1B8004E42BE /* PZSynoDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE37A46F1D8ED1B8004E42BE /* PZSynoDevice.swift */; };
+		AE37A4811D8ED1C6004E42BE /* PZSynoApiInfoObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE37A4761D8ED1C6004E42BE /* PZSynoApiInfoObject.swift */; };
+		AE37A4821D8ED1C6004E42BE /* PZSynoConnectionsInfoObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE37A4771D8ED1C6004E42BE /* PZSynoConnectionsInfoObject.swift */; };
+		AE37A4831D8ED1C6004E42BE /* PZSynoCpuLoadInfoObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE37A4781D8ED1C6004E42BE /* PZSynoCpuLoadInfoObject.swift */; };
+		AE37A4841D8ED1C6004E42BE /* PZSynoDownloadStationInfoObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE37A4791D8ED1C6004E42BE /* PZSynoDownloadStationInfoObject.swift */; };
+		AE37A4851D8ED1C6004E42BE /* PZSynoDownloadStationStatisticObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE37A47A1D8ED1C6004E42BE /* PZSynoDownloadStationStatisticObject.swift */; };
+		AE37A4861D8ED1C6004E42BE /* PZSynoDownloadStationTaskControlObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE37A47B1D8ED1C6004E42BE /* PZSynoDownloadStationTaskControlObject.swift */; };
+		AE37A4871D8ED1C6004E42BE /* PZSynoDownloadStationTaskListObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE37A47C1D8ED1C6004E42BE /* PZSynoDownloadStationTaskListObject.swift */; };
+		AE37A4881D8ED1C6004E42BE /* PZSynoFileStationInfoObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE37A47D1D8ED1C6004E42BE /* PZSynoFileStationInfoObject.swift */; };
+		AE37A4891D8ED1C6004E42BE /* PZSynoSystemInfoObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE37A47E1D8ED1C6004E42BE /* PZSynoSystemInfoObject.swift */; };
+		AE37A48A1D8ED1C6004E42BE /* PZSynoSystemStatusObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE37A47F1D8ED1C6004E42BE /* PZSynoSystemStatusObject.swift */; };
+		AE37A48B1D8ED1C6004E42BE /* PZSynoSystemStorageInfoObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE37A4801D8ED1C6004E42BE /* PZSynoSystemStorageInfoObject.swift */; };
+		AE37A4921D8ED1D7004E42BE /* PZRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE37A48D1D8ED1D7004E42BE /* PZRequest.swift */; };
+		AE37A4931D8ED1D7004E42BE /* PZResponseObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE37A48E1D8ED1D7004E42BE /* PZResponseObject.swift */; };
+		AE37A4941D8ED1D7004E42BE /* PZSynoRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE37A48F1D8ED1D7004E42BE /* PZSynoRequest.swift */; };
+		AE37A4951D8ED1D7004E42BE /* PZSynoRequestUrl.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE37A4901D8ED1D7004E42BE /* PZSynoRequestUrl.swift */; };
+		AE37A4961D8ED1D7004E42BE /* PZSynoResponseObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE37A4911D8ED1D7004E42BE /* PZSynoResponseObject.swift */; };
+		AE37A4981D8EF1DB004E42BE /* ReportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE37A4971D8EF1DB004E42BE /* ReportViewController.swift */; };
+		AE37A4D21D8F0012004E42BE /* PZReportBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE37A4D11D8F0012004E42BE /* PZReportBackgroundView.swift */; };
+		AE37A4D41D8F17C3004E42BE /* PZSynoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE37A4D31D8F17C3004E42BE /* PZSynoModel.swift */; };
+		AE37A4D61D8F29D9004E42BE /* PZSynoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE37A4D51D8F29D9004E42BE /* PZSynoApp.swift */; };
+		AE390C4C1DAB018D004594C9 /* PZSynoError.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE390C4B1DAB018D004594C9 /* PZSynoError.swift */; };
+		AE3AC70D1DD3AE0A00CFFA84 /* PZDownloadItem.m in Sources */ = {isa = PBXBuildFile; fileRef = AE3AC70B1DD3AE0A00CFFA84 /* PZDownloadItem.m */; };
+		AE3AC70E1DD3AE0A00CFFA84 /* PZDownloadItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE3AC70C1DD3AE0A00CFFA84 /* PZDownloadItem.xib */; };
+		AE44DA141DA6E69200788A2D /* PZSeparatorLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE44DA131DA6E69200788A2D /* PZSeparatorLine.swift */; };
+		AE50460A1E254558008E1240 /* PZUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = AE5046091E254558008E1240 /* PZUtils.m */; };
+		AE5200541DAAC0850042682C /* PZProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5200531DAAC0850042682C /* PZProgressBar.swift */; };
+		AE5E16401E3165700062C6BB /* PZTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5E163F1E3165700062C6BB /* PZTheme.swift */; };
+		AE67D6891D90A66C0050DEF9 /* PZSynoObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE67D6881D90A66C0050DEF9 /* PZSynoObject.swift */; };
+		AE6C68FE1DE8D7FA00A0640F /* PZAddDownloadExecuteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6C68FD1DE8D7FA00A0640F /* PZAddDownloadExecuteViewController.swift */; };
+		AE8C6EB01DA46D6800836F68 /* PZSettingsButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE8C6EAF1DA46D6800836F68 /* PZSettingsButton.swift */; };
+		AE8F44B61DCFA46E006ADF86 /* PZViewItemsContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE8F44B51DCFA46E006ADF86 /* PZViewItemsContainer.swift */; };
+		AE8F44B81DCFA84C006ADF86 /* PZConnectionsItemsContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE8F44B71DCFA84C006ADF86 /* PZConnectionsItemsContainer.swift */; };
+		AE920A631DD0C17C00083266 /* PZConnectionKickButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE920A621DD0C17C00083266 /* PZConnectionKickButton.swift */; };
+		AEA3F67E1DEE2A1B00E43270 /* AddDownload.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEA3F67C1DEE2A1B00E43270 /* AddDownload.storyboard */; };
+		AEA3F6821DEE2B6100E43270 /* PZAddDownload.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA3F6811DEE2B6100E43270 /* PZAddDownload.swift */; };
+		AEA8F0311DCBAAFC009A3066 /* PZConnectionItem.m in Sources */ = {isa = PBXBuildFile; fileRef = AEA8F02F1DCBAAFC009A3066 /* PZConnectionItem.m */; };
+		AEA8F0321DCBAAFC009A3066 /* PZConnectionItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = AEA8F0301DCBAAFC009A3066 /* PZConnectionItem.xib */; };
+		AEA99DC31DBA84EE00F2F242 /* PZDebugView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA99DC21DBA84EE00F2F242 /* PZDebugView.swift */; };
+		AEABB6481DDCEA6F00159962 /* PZDownloadDeleteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEABB6461DDCEA6F00159962 /* PZDownloadDeleteButton.swift */; };
+		AEABB6491DDCEA6F00159962 /* PZDownloadResumeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEABB6471DDCEA6F00159962 /* PZDownloadResumeButton.swift */; };
+		AEAFF9731D96BB800076528C /* PZAppEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEAFF9721D96BB800076528C /* PZAppEvent.swift */; };
+		AEB864931D933A5D00586C09 /* MainWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB864921D933A5D00586C09 /* MainWindowController.swift */; };
+		AEBE27B51DD3BE100067D3ED /* PZDownloadsItemsContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEBE27B41DD3BE100067D3ED /* PZDownloadsItemsContainer.swift */; };
+		AECA44751DB8200600F44308 /* PZStorageVolumeItem.m in Sources */ = {isa = PBXBuildFile; fileRef = AECA44741DB8200600F44308 /* PZStorageVolumeItem.m */; };
+		AED6294D1DB41AD300DF4304 /* PZTagColorLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AED6294C1DB41AD300DF4304 /* PZTagColorLabel.swift */; };
+		AED789481DEDBCB900CB4F15 /* Report.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AED789461DEDBCB900CB4F15 /* Report.storyboard */; };
+		AEE6E4841DFD087F000CDB9C /* PZKeychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE6E4831DFD087F000CDB9C /* PZKeychain.swift */; };
+		AEE7C9BC1DB6CD5C00D3F709 /* PZStorageVolumeItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = AEE7C9BB1DB6CD5C00D3F709 /* PZStorageVolumeItem.xib */; };
+		AEE9234B1DF8C8E000966FC9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE9234A1DF8C8E000966FC9 /* AppDelegate.swift */; };
+		AEE9234D1DF8C8E000966FC9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AEE9234C1DF8C8E000966FC9 /* Assets.xcassets */; };
+		AEE923501DF8C8E000966FC9 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = AEE9234E1DF8C8E000966FC9 /* MainMenu.xib */; };
+		AEE923571DF8C9A300966FC9 /* SynoToolLoginLauncher.app in CopyFiles */ = {isa = PBXBuildFile; fileRef = AEE923481DF8C8E000966FC9 /* SynoToolLoginLauncher.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		AEEC3BB41DDBA4090020E9B2 /* PZAddDownloadButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEEC3BB31DDBA4090020E9B2 /* PZAddDownloadButton.swift */; };
+		AEEFDAFA1DE639A600DC6B6F /* PZAddDownloadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEEFDAF91DE639A600DC6B6F /* PZAddDownloadViewController.swift */; };
+		AEF6FABF1DE9C53200294A96 /* PZAddSynoDeviceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEF6FABE1DE9C53200294A96 /* PZAddSynoDeviceViewController.swift */; };
+		AEF6FAC11DEA214100294A96 /* PZEventMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEF6FAC01DEA214100294A96 /* PZEventMonitor.swift */; };
+		AEF6FAC31DEA299200294A96 /* PZReportPopover.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEF6FAC21DEA299200294A96 /* PZReportPopover.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		AEE923561DF8C99400966FC9 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = Contents/Library/LoginItems;
+			dstSubfolderSpec = 1;
+			files = (
+				AEE923571DF8C9A300966FC9 /* SynoToolLoginLauncher.app in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		AE0EF32C1DA2F8C6004834C8 /* PZMainBackgroundView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PZMainBackgroundView.swift; path = sources/ui/PZMainBackgroundView.swift; sourceTree = SOURCE_ROOT; };
+		AE0EF32E1DA3126E004834C8 /* PZButtonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PZButtonView.swift; path = sources/ui/PZButtonView.swift; sourceTree = SOURCE_ROOT; };
+		AE13F5E71DF80F9900579099 /* PZSynchronized.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PZSynchronized.swift; path = sources/PZSynchronized.swift; sourceTree = SOURCE_ROOT; };
+		AE13F5ED1DF84D9D00579099 /* ServiceManagement.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ServiceManagement.framework; path = System/Library/Frameworks/ServiceManagement.framework; sourceTree = SDKROOT; };
+		AE13F5EF1DF8506B00579099 /* SynoTool.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SynoTool.entitlements; sourceTree = "<group>"; };
+		AE14E67C1D919B750096BB45 /* PZSynoAuthObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PZSynoAuthObject.swift; path = sources/model/PZSynoAuthObject.swift; sourceTree = SOURCE_ROOT; };
+		AE14E67E1D91BAA90096BB45 /* PZSynoEmptyObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PZSynoEmptyObject.swift; path = sources/model/PZSynoEmptyObject.swift; sourceTree = SOURCE_ROOT; };
+		AE1FABD81E05B1DE005354DB /* PZAuthData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PZAuthData.swift; path = sources/PZAuthData.swift; sourceTree = SOURCE_ROOT; };
+		AE2229E21DCFC0AB00F4AF49 /* PZVolumesItemsContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PZVolumesItemsContainer.swift; path = sources/ui/PZVolumesItemsContainer.swift; sourceTree = SOURCE_ROOT; };
+		AE22D37F1DA592920090FCE0 /* PZSettingsMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PZSettingsMenu.swift; path = sources/ui/PZSettingsMenu.swift; sourceTree = SOURCE_ROOT; };
+		AE37A4491D8ED065004E42BE /* SynoTool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SynoTool.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE37A44C1D8ED065004E42BE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AE37A44E1D8ED065004E42BE /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		AE37A4501D8ED065004E42BE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AE37A4531D8ED065004E42BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AE37A4551D8ED065004E42BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AE37A46B1D8ED1B8004E42BE /* PZAppConsts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PZAppConsts.swift; path = sources/PZAppConsts.swift; sourceTree = SOURCE_ROOT; };
+		AE37A46C1D8ED1B8004E42BE /* PZAppPrefs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PZAppPrefs.swift; path = sources/PZAppPrefs.swift; sourceTree = SOURCE_ROOT; };
+		AE37A46D1D8ED1B8004E42BE /* PZStringUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PZStringUtils.swift; path = sources/PZStringUtils.swift; sourceTree = SOURCE_ROOT; };
+		AE37A46E1D8ED1B8004E42BE /* PZSynoAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PZSynoAPI.swift; path = sources/PZSynoAPI.swift; sourceTree = SOURCE_ROOT; };
+		AE37A46F1D8ED1B8004E42BE /* PZSynoDevice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PZSynoDevice.swift; path = sources/PZSynoDevice.swift; sourceTree = SOURCE_ROOT; };
+		AE37A4761D8ED1C6004E42BE /* PZSynoApiInfoObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PZSynoApiInfoObject.swift; path = sources/model/PZSynoApiInfoObject.swift; sourceTree = SOURCE_ROOT; };
+		AE37A4771D8ED1C6004E42BE /* PZSynoConnectionsInfoObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PZSynoConnectionsInfoObject.swift; path = sources/model/PZSynoConnectionsInfoObject.swift; sourceTree = SOURCE_ROOT; };
+		AE37A4781D8ED1C6004E42BE /* PZSynoCpuLoadInfoObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PZSynoCpuLoadInfoObject.swift; path = sources/model/PZSynoCpuLoadInfoObject.swift; sourceTree = SOURCE_ROOT; };
+		AE37A4791D8ED1C6004E42BE /* PZSynoDownloadStationInfoObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PZSynoDownloadStationInfoObject.swift; path = sources/model/PZSynoDownloadStationInfoObject.swift; sourceTree = SOURCE_ROOT; };
+		AE37A47A1D8ED1C6004E42BE /* PZSynoDownloadStationStatisticObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PZSynoDownloadStationStatisticObject.swift; path = sources/model/PZSynoDownloadStationStatisticObject.swift; sourceTree = SOURCE_ROOT; };
+		AE37A47B1D8ED1C6004E42BE /* PZSynoDownloadStationTaskControlObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PZSynoDownloadStationTaskControlObject.swift; path = sources/model/PZSynoDownloadStationTaskControlObject.swift; sourceTree = SOURCE_ROOT; };
+		AE37A47C1D8ED1C6004E42BE /* PZSynoDownloadStationTaskListObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PZSynoDownloadStationTaskListObject.swift; path = sources/model/PZSynoDownloadStationTaskListObject.swift; sourceTree = SOURCE_ROOT; };
+		AE37A47D1D8ED1C6004E42BE /* PZSynoFileStationInfoObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PZSynoFileStationInfoObject.swift; path = sources/model/PZSynoFileStationInfoObject.swift; sourceTree = SOURCE_ROOT; };
+		AE37A47E1D8ED1C6004E42BE /* PZSynoSystemInfoObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PZSynoSystemInfoObject.swift; path = sources/model/PZSynoSystemInfoObject.swift; sourceTree = SOURCE_ROOT; };
+		AE37A47F1D8ED1C6004E42BE /* PZSynoSystemStatusObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PZSynoSystemStatusObject.swift; path = sources/model/PZSynoSystemStatusObject.swift; sourceTree = SOURCE_ROOT; };
+		AE37A4801D8ED1C6004E42BE /* PZSynoSystemStorageInfoObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PZSynoSystemStorageInfoObject.swift; path = sources/model/PZSynoSystemStorageInfoObject.swift; sourceTree = SOURCE_ROOT; };
+		AE37A48D1D8ED1D7004E42BE /* PZRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PZRequest.swift; path = sources/network/PZRequest.swift; sourceTree = SOURCE_ROOT; };
+		AE37A48E1D8ED1D7004E42BE /* PZResponseObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PZResponseObject.swift; path = sources/network/PZResponseObject.swift; sourceTree = SOURCE_ROOT; };
+		AE37A48F1D8ED1D7004E42BE /* PZSynoRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PZSynoRequest.swift; path = sources/network/PZSynoRequest.swift; sourceTree = SOURCE_ROOT; };
+		AE37A4901D8ED1D7004E42BE /* PZSynoRequestUrl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PZSynoRequestUrl.swift; path = sources/network/PZSynoRequestUrl.swift; sourceTree = SOURCE_ROOT; };
+		AE37A4911D8ED1D7004E42BE /* PZSynoResponseObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PZSynoResponseObject.swift; path = sources/network/PZSynoResponseObject.swift; sourceTree = SOURCE_ROOT; };
+		AE37A4971D8EF1DB004E42BE /* ReportViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReportViewController.swift; sourceTree = "<group>"; };
+		AE37A4D11D8F0012004E42BE /* PZReportBackgroundView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PZReportBackgroundView.swift; path = sources/ui/PZReportBackgroundView.swift; sourceTree = SOURCE_ROOT; };
+		AE37A4D31D8F17C3004E42BE /* PZSynoModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PZSynoModel.swift; path = sources/PZSynoModel.swift; sourceTree = SOURCE_ROOT; };
+		AE37A4D51D8F29D9004E42BE /* PZSynoApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PZSynoApp.swift; path = sources/PZSynoApp.swift; sourceTree = SOURCE_ROOT; };
+		AE390C4B1DAB018D004594C9 /* PZSynoError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PZSynoError.swift; path = sources/PZSynoError.swift; sourceTree = SOURCE_ROOT; };
+		AE3AC70A1DD3AE0A00CFFA84 /* PZDownloadItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PZDownloadItem.h; path = sources/ui/PZDownloadItem.h; sourceTree = SOURCE_ROOT; };
+		AE3AC70B1DD3AE0A00CFFA84 /* PZDownloadItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PZDownloadItem.m; path = sources/ui/PZDownloadItem.m; sourceTree = SOURCE_ROOT; };
+		AE3AC70C1DD3AE0A00CFFA84 /* PZDownloadItem.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PZDownloadItem.xib; path = sources/ui/PZDownloadItem.xib; sourceTree = SOURCE_ROOT; };
+		AE44DA131DA6E69200788A2D /* PZSeparatorLine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PZSeparatorLine.swift; path = sources/ui/PZSeparatorLine.swift; sourceTree = SOURCE_ROOT; };
+		AE5046081E254558008E1240 /* PZUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PZUtils.h; path = sources/PZUtils.h; sourceTree = SOURCE_ROOT; };
+		AE5046091E254558008E1240 /* PZUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PZUtils.m; path = sources/PZUtils.m; sourceTree = SOURCE_ROOT; };
+		AE5200531DAAC0850042682C /* PZProgressBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PZProgressBar.swift; path = sources/ui/PZProgressBar.swift; sourceTree = SOURCE_ROOT; };
+		AE5E163F1E3165700062C6BB /* PZTheme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PZTheme.swift; path = sources/ui/PZTheme.swift; sourceTree = SOURCE_ROOT; };
+		AE67D6881D90A66C0050DEF9 /* PZSynoObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PZSynoObject.swift; path = sources/model/PZSynoObject.swift; sourceTree = SOURCE_ROOT; };
+		AE6C68FD1DE8D7FA00A0640F /* PZAddDownloadExecuteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PZAddDownloadExecuteViewController.swift; path = sources/ui/PZAddDownloadExecuteViewController.swift; sourceTree = SOURCE_ROOT; };
+		AE8C6EAF1DA46D6800836F68 /* PZSettingsButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PZSettingsButton.swift; path = sources/ui/PZSettingsButton.swift; sourceTree = SOURCE_ROOT; };
+		AE8F44B51DCFA46E006ADF86 /* PZViewItemsContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PZViewItemsContainer.swift; path = sources/ui/PZViewItemsContainer.swift; sourceTree = SOURCE_ROOT; };
+		AE8F44B71DCFA84C006ADF86 /* PZConnectionsItemsContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PZConnectionsItemsContainer.swift; path = sources/ui/PZConnectionsItemsContainer.swift; sourceTree = SOURCE_ROOT; };
+		AE920A621DD0C17C00083266 /* PZConnectionKickButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PZConnectionKickButton.swift; path = sources/ui/PZConnectionKickButton.swift; sourceTree = SOURCE_ROOT; };
+		AEA3F67D1DEE2A1B00E43270 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/AddDownload.storyboard; sourceTree = "<group>"; };
+		AEA3F6811DEE2B6100E43270 /* PZAddDownload.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PZAddDownload.swift; path = sources/PZAddDownload.swift; sourceTree = SOURCE_ROOT; };
+		AEA8F02E1DCBAAFC009A3066 /* PZConnectionItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PZConnectionItem.h; path = sources/ui/PZConnectionItem.h; sourceTree = SOURCE_ROOT; };
+		AEA8F02F1DCBAAFC009A3066 /* PZConnectionItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PZConnectionItem.m; path = sources/ui/PZConnectionItem.m; sourceTree = SOURCE_ROOT; };
+		AEA8F0301DCBAAFC009A3066 /* PZConnectionItem.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PZConnectionItem.xib; path = sources/ui/PZConnectionItem.xib; sourceTree = SOURCE_ROOT; };
+		AEA99DC21DBA84EE00F2F242 /* PZDebugView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PZDebugView.swift; path = sources/ui/PZDebugView.swift; sourceTree = SOURCE_ROOT; };
+		AEABB6461DDCEA6F00159962 /* PZDownloadDeleteButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PZDownloadDeleteButton.swift; path = sources/ui/PZDownloadDeleteButton.swift; sourceTree = SOURCE_ROOT; };
+		AEABB6471DDCEA6F00159962 /* PZDownloadResumeButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PZDownloadResumeButton.swift; path = sources/ui/PZDownloadResumeButton.swift; sourceTree = SOURCE_ROOT; };
+		AEAFF9721D96BB800076528C /* PZAppEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PZAppEvent.swift; path = sources/PZAppEvent.swift; sourceTree = SOURCE_ROOT; };
+		AEB864921D933A5D00586C09 /* MainWindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainWindowController.swift; sourceTree = "<group>"; };
+		AEBE27B41DD3BE100067D3ED /* PZDownloadsItemsContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PZDownloadsItemsContainer.swift; path = sources/ui/PZDownloadsItemsContainer.swift; sourceTree = SOURCE_ROOT; };
+		AECA44731DB8200600F44308 /* PZStorageVolumeItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PZStorageVolumeItem.h; path = sources/ui/PZStorageVolumeItem.h; sourceTree = SOURCE_ROOT; };
+		AECA44741DB8200600F44308 /* PZStorageVolumeItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PZStorageVolumeItem.m; path = sources/ui/PZStorageVolumeItem.m; sourceTree = SOURCE_ROOT; };
+		AECA44761DB821A300F44308 /* PZBridgingHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PZBridgingHeader.h; path = sources/PZBridgingHeader.h; sourceTree = SOURCE_ROOT; };
+		AED6294C1DB41AD300DF4304 /* PZTagColorLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PZTagColorLabel.swift; path = sources/ui/PZTagColorLabel.swift; sourceTree = SOURCE_ROOT; };
+		AED789471DEDBCB900CB4F15 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Report.storyboard; sourceTree = "<group>"; };
+		AEE6E4831DFD087F000CDB9C /* PZKeychain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PZKeychain.swift; path = sources/PZKeychain.swift; sourceTree = SOURCE_ROOT; };
+		AEE7C9BB1DB6CD5C00D3F709 /* PZStorageVolumeItem.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PZStorageVolumeItem.xib; path = sources/ui/PZStorageVolumeItem.xib; sourceTree = SOURCE_ROOT; };
+		AEE923481DF8C8E000966FC9 /* SynoToolLoginLauncher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SynoToolLoginLauncher.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AEE9234A1DF8C8E000966FC9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AEE9234C1DF8C8E000966FC9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AEE9234F1DF8C8E000966FC9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		AEE923511DF8C8E000966FC9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AEE923581DF8CA4A00966FC9 /* SynoToolLoginLauncher.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SynoToolLoginLauncher.entitlements; sourceTree = "<group>"; };
+		AEEC3BB31DDBA4090020E9B2 /* PZAddDownloadButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PZAddDownloadButton.swift; path = sources/ui/PZAddDownloadButton.swift; sourceTree = SOURCE_ROOT; };
+		AEEFDAF91DE639A600DC6B6F /* PZAddDownloadViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PZAddDownloadViewController.swift; path = sources/ui/PZAddDownloadViewController.swift; sourceTree = SOURCE_ROOT; };
+		AEF6FABE1DE9C53200294A96 /* PZAddSynoDeviceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PZAddSynoDeviceViewController.swift; path = sources/ui/PZAddSynoDeviceViewController.swift; sourceTree = SOURCE_ROOT; };
+		AEF6FAC01DEA214100294A96 /* PZEventMonitor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PZEventMonitor.swift; path = sources/PZEventMonitor.swift; sourceTree = SOURCE_ROOT; };
+		AEF6FAC21DEA299200294A96 /* PZReportPopover.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PZReportPopover.swift; path = sources/PZReportPopover.swift; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AE37A4461D8ED065004E42BE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE13F5EE1DF84D9D00579099 /* ServiceManagement.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AEE923451DF8C8E000966FC9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AE13F5EC1DF84D9D00579099 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AE13F5ED1DF84D9D00579099 /* ServiceManagement.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AE37A4401D8ED065004E42BE = {
+			isa = PBXGroup;
+			children = (
+				AE37A44B1D8ED065004E42BE /* SynoTool */,
+				AEE923491DF8C8E000966FC9 /* SynoToolLoginLauncher */,
+				AE37A44A1D8ED065004E42BE /* Products */,
+				AE13F5EC1DF84D9D00579099 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		AE37A44A1D8ED065004E42BE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AE37A4491D8ED065004E42BE /* SynoTool.app */,
+				AEE923481DF8C8E000966FC9 /* SynoToolLoginLauncher.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AE37A44B1D8ED065004E42BE /* SynoTool */ = {
+			isa = PBXGroup;
+			children = (
+				AE37A48C1D8ED1CB004E42BE /* network */,
+				AE37A4751D8ED1BC004E42BE /* model */,
+				AE37A4D01D8EFFEB004E42BE /* ui */,
+				AE390C4B1DAB018D004594C9 /* PZSynoError.swift */,
+				AE37A46C1D8ED1B8004E42BE /* PZAppPrefs.swift */,
+				AE37A46B1D8ED1B8004E42BE /* PZAppConsts.swift */,
+				AEAFF9721D96BB800076528C /* PZAppEvent.swift */,
+				AE1FABD81E05B1DE005354DB /* PZAuthData.swift */,
+				AE37A4D51D8F29D9004E42BE /* PZSynoApp.swift */,
+				AE37A46F1D8ED1B8004E42BE /* PZSynoDevice.swift */,
+				AE37A46E1D8ED1B8004E42BE /* PZSynoAPI.swift */,
+				AE37A4D31D8F17C3004E42BE /* PZSynoModel.swift */,
+				AEF6FAC01DEA214100294A96 /* PZEventMonitor.swift */,
+				AEA3F6811DEE2B6100E43270 /* PZAddDownload.swift */,
+				AEF6FAC21DEA299200294A96 /* PZReportPopover.swift */,
+				AE37A4971D8EF1DB004E42BE /* ReportViewController.swift */,
+				AE37A44E1D8ED065004E42BE /* MainViewController.swift */,
+				AEB864921D933A5D00586C09 /* MainWindowController.swift */,
+				AE13F5E71DF80F9900579099 /* PZSynchronized.swift */,
+				AE5046081E254558008E1240 /* PZUtils.h */,
+				AE5046091E254558008E1240 /* PZUtils.m */,
+				AE37A46D1D8ED1B8004E42BE /* PZStringUtils.swift */,
+				AEE6E4831DFD087F000CDB9C /* PZKeychain.swift */,
+				AECA44761DB821A300F44308 /* PZBridgingHeader.h */,
+				AE37A44C1D8ED065004E42BE /* AppDelegate.swift */,
+				AE37A4501D8ED065004E42BE /* Assets.xcassets */,
+				AEA3F67C1DEE2A1B00E43270 /* AddDownload.storyboard */,
+				AE37A4521D8ED065004E42BE /* Main.storyboard */,
+				AED789461DEDBCB900CB4F15 /* Report.storyboard */,
+				AE13F5EF1DF8506B00579099 /* SynoTool.entitlements */,
+				AE37A4551D8ED065004E42BE /* Info.plist */,
+			);
+			path = SynoTool;
+			sourceTree = "<group>";
+		};
+		AE37A4751D8ED1BC004E42BE /* model */ = {
+			isa = PBXGroup;
+			children = (
+				AE67D6881D90A66C0050DEF9 /* PZSynoObject.swift */,
+				AE14E67E1D91BAA90096BB45 /* PZSynoEmptyObject.swift */,
+				AE14E67C1D919B750096BB45 /* PZSynoAuthObject.swift */,
+				AE37A4761D8ED1C6004E42BE /* PZSynoApiInfoObject.swift */,
+				AE37A47D1D8ED1C6004E42BE /* PZSynoFileStationInfoObject.swift */,
+				AE37A47F1D8ED1C6004E42BE /* PZSynoSystemStatusObject.swift */,
+				AE37A47E1D8ED1C6004E42BE /* PZSynoSystemInfoObject.swift */,
+				AE37A4781D8ED1C6004E42BE /* PZSynoCpuLoadInfoObject.swift */,
+				AE37A4801D8ED1C6004E42BE /* PZSynoSystemStorageInfoObject.swift */,
+				AE37A4771D8ED1C6004E42BE /* PZSynoConnectionsInfoObject.swift */,
+				AE37A4791D8ED1C6004E42BE /* PZSynoDownloadStationInfoObject.swift */,
+				AE37A47A1D8ED1C6004E42BE /* PZSynoDownloadStationStatisticObject.swift */,
+				AE37A47C1D8ED1C6004E42BE /* PZSynoDownloadStationTaskListObject.swift */,
+				AE37A47B1D8ED1C6004E42BE /* PZSynoDownloadStationTaskControlObject.swift */,
+			);
+			name = model;
+			sourceTree = "<group>";
+		};
+		AE37A48C1D8ED1CB004E42BE /* network */ = {
+			isa = PBXGroup;
+			children = (
+				AE37A48D1D8ED1D7004E42BE /* PZRequest.swift */,
+				AE37A48F1D8ED1D7004E42BE /* PZSynoRequest.swift */,
+				AE37A4901D8ED1D7004E42BE /* PZSynoRequestUrl.swift */,
+				AE37A48E1D8ED1D7004E42BE /* PZResponseObject.swift */,
+				AE37A4911D8ED1D7004E42BE /* PZSynoResponseObject.swift */,
+			);
+			name = network;
+			sourceTree = "<group>";
+		};
+		AE37A4D01D8EFFEB004E42BE /* ui */ = {
+			isa = PBXGroup;
+			children = (
+				AEEFDAF81DE6396B00DC6B6F /* buttons */,
+				AE5E163F1E3165700062C6BB /* PZTheme.swift */,
+				AE44DA131DA6E69200788A2D /* PZSeparatorLine.swift */,
+				AE5200531DAAC0850042682C /* PZProgressBar.swift */,
+				AE37A4D11D8F0012004E42BE /* PZReportBackgroundView.swift */,
+				AE0EF32C1DA2F8C6004834C8 /* PZMainBackgroundView.swift */,
+				AE22D37F1DA592920090FCE0 /* PZSettingsMenu.swift */,
+				AED6294C1DB41AD300DF4304 /* PZTagColorLabel.swift */,
+				AE3AC70A1DD3AE0A00CFFA84 /* PZDownloadItem.h */,
+				AE3AC70B1DD3AE0A00CFFA84 /* PZDownloadItem.m */,
+				AE3AC70C1DD3AE0A00CFFA84 /* PZDownloadItem.xib */,
+				AEA8F02E1DCBAAFC009A3066 /* PZConnectionItem.h */,
+				AEA8F02F1DCBAAFC009A3066 /* PZConnectionItem.m */,
+				AEA8F0301DCBAAFC009A3066 /* PZConnectionItem.xib */,
+				AECA44731DB8200600F44308 /* PZStorageVolumeItem.h */,
+				AECA44741DB8200600F44308 /* PZStorageVolumeItem.m */,
+				AEE7C9BB1DB6CD5C00D3F709 /* PZStorageVolumeItem.xib */,
+				AE8F44B51DCFA46E006ADF86 /* PZViewItemsContainer.swift */,
+				AE8F44B71DCFA84C006ADF86 /* PZConnectionsItemsContainer.swift */,
+				AE2229E21DCFC0AB00F4AF49 /* PZVolumesItemsContainer.swift */,
+				AEBE27B41DD3BE100067D3ED /* PZDownloadsItemsContainer.swift */,
+				AEA99DC21DBA84EE00F2F242 /* PZDebugView.swift */,
+				AEEFDAF91DE639A600DC6B6F /* PZAddDownloadViewController.swift */,
+				AE6C68FD1DE8D7FA00A0640F /* PZAddDownloadExecuteViewController.swift */,
+				AEF6FABE1DE9C53200294A96 /* PZAddSynoDeviceViewController.swift */,
+			);
+			name = ui;
+			sourceTree = "<group>";
+		};
+		AEE923491DF8C8E000966FC9 /* SynoToolLoginLauncher */ = {
+			isa = PBXGroup;
+			children = (
+				AEE9234A1DF8C8E000966FC9 /* AppDelegate.swift */,
+				AEE9234C1DF8C8E000966FC9 /* Assets.xcassets */,
+				AEE9234E1DF8C8E000966FC9 /* MainMenu.xib */,
+				AEE923581DF8CA4A00966FC9 /* SynoToolLoginLauncher.entitlements */,
+				AEE923511DF8C8E000966FC9 /* Info.plist */,
+			);
+			path = SynoToolLoginLauncher;
+			sourceTree = "<group>";
+		};
+		AEEFDAF81DE6396B00DC6B6F /* buttons */ = {
+			isa = PBXGroup;
+			children = (
+				AE0EF32E1DA3126E004834C8 /* PZButtonView.swift */,
+				AE8C6EAF1DA46D6800836F68 /* PZSettingsButton.swift */,
+				AE920A621DD0C17C00083266 /* PZConnectionKickButton.swift */,
+				AEEC3BB31DDBA4090020E9B2 /* PZAddDownloadButton.swift */,
+				AEABB6461DDCEA6F00159962 /* PZDownloadDeleteButton.swift */,
+				AEABB6471DDCEA6F00159962 /* PZDownloadResumeButton.swift */,
+			);
+			name = buttons;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AE37A4481D8ED065004E42BE /* SynoTool */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AE37A4631D8ED065004E42BE /* Build configuration list for PBXNativeTarget "SynoTool" */;
+			buildPhases = (
+				AE37A4451D8ED065004E42BE /* Sources */,
+				AE37A4461D8ED065004E42BE /* Frameworks */,
+				AE37A4471D8ED065004E42BE /* Resources */,
+				AEE923561DF8C99400966FC9 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SynoTool;
+			productName = SynoTool;
+			productReference = AE37A4491D8ED065004E42BE /* SynoTool.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AEE923471DF8C8E000966FC9 /* SynoToolLoginLauncher */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AEE923521DF8C8E000966FC9 /* Build configuration list for PBXNativeTarget "SynoToolLoginLauncher" */;
+			buildPhases = (
+				AEE923441DF8C8E000966FC9 /* Sources */,
+				AEE923451DF8C8E000966FC9 /* Frameworks */,
+				AEE923461DF8C8E000966FC9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SynoToolLoginLauncher;
+			productName = SynoToolLoginLauncher;
+			productReference = AEE923481DF8C8E000966FC9 /* SynoToolLoginLauncher.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AE37A4411D8ED065004E42BE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0810;
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = "Piotr Zagawa";
+				TargetAttributes = {
+					AE37A4481D8ED065004E42BE = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 3JQHMP5J72;
+						LastSwiftMigration = 0800;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+							com.apple.Sandbox = {
+								enabled = 1;
+							};
+						};
+					};
+					AEE923471DF8C8E000966FC9 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 3JQHMP5J72;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = AE37A4441D8ED065004E42BE /* Build configuration list for PBXProject "SynoTool" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AE37A4401D8ED065004E42BE;
+			productRefGroup = AE37A44A1D8ED065004E42BE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AE37A4481D8ED065004E42BE /* SynoTool */,
+				AEE923471DF8C8E000966FC9 /* SynoToolLoginLauncher */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AE37A4471D8ED065004E42BE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE37A4511D8ED065004E42BE /* Assets.xcassets in Resources */,
+				AEE7C9BC1DB6CD5C00D3F709 /* PZStorageVolumeItem.xib in Resources */,
+				AED789481DEDBCB900CB4F15 /* Report.storyboard in Resources */,
+				AEA8F0321DCBAAFC009A3066 /* PZConnectionItem.xib in Resources */,
+				AE3AC70E1DD3AE0A00CFFA84 /* PZDownloadItem.xib in Resources */,
+				AEA3F67E1DEE2A1B00E43270 /* AddDownload.storyboard in Resources */,
+				AE37A4541D8ED065004E42BE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AEE923461DF8C8E000966FC9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AEE9234D1DF8C8E000966FC9 /* Assets.xcassets in Resources */,
+				AEE923501DF8C8E000966FC9 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AE37A4451D8ED065004E42BE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE37A44F1D8ED065004E42BE /* MainViewController.swift in Sources */,
+				AE0EF32D1DA2F8C6004834C8 /* PZMainBackgroundView.swift in Sources */,
+				AE37A4931D8ED1D7004E42BE /* PZResponseObject.swift in Sources */,
+				AE37A4D61D8F29D9004E42BE /* PZSynoApp.swift in Sources */,
+				AEF6FAC31DEA299200294A96 /* PZReportPopover.swift in Sources */,
+				AE37A4D41D8F17C3004E42BE /* PZSynoModel.swift in Sources */,
+				AE44DA141DA6E69200788A2D /* PZSeparatorLine.swift in Sources */,
+				AEBE27B51DD3BE100067D3ED /* PZDownloadsItemsContainer.swift in Sources */,
+				AE37A4821D8ED1C6004E42BE /* PZSynoConnectionsInfoObject.swift in Sources */,
+				AE37A4891D8ED1C6004E42BE /* PZSynoSystemInfoObject.swift in Sources */,
+				AEABB6491DDCEA6F00159962 /* PZDownloadResumeButton.swift in Sources */,
+				AED6294D1DB41AD300DF4304 /* PZTagColorLabel.swift in Sources */,
+				AE8C6EB01DA46D6800836F68 /* PZSettingsButton.swift in Sources */,
+				AE3AC70D1DD3AE0A00CFFA84 /* PZDownloadItem.m in Sources */,
+				AEF6FAC11DEA214100294A96 /* PZEventMonitor.swift in Sources */,
+				AE390C4C1DAB018D004594C9 /* PZSynoError.swift in Sources */,
+				AE37A4941D8ED1D7004E42BE /* PZSynoRequest.swift in Sources */,
+				AE37A4881D8ED1C6004E42BE /* PZSynoFileStationInfoObject.swift in Sources */,
+				AE37A4D21D8F0012004E42BE /* PZReportBackgroundView.swift in Sources */,
+				AE5E16401E3165700062C6BB /* PZTheme.swift in Sources */,
+				AE37A4701D8ED1B8004E42BE /* PZAppConsts.swift in Sources */,
+				AE920A631DD0C17C00083266 /* PZConnectionKickButton.swift in Sources */,
+				AE37A4721D8ED1B8004E42BE /* PZStringUtils.swift in Sources */,
+				AE37A4981D8EF1DB004E42BE /* ReportViewController.swift in Sources */,
+				AEB864931D933A5D00586C09 /* MainWindowController.swift in Sources */,
+				AECA44751DB8200600F44308 /* PZStorageVolumeItem.m in Sources */,
+				AE37A4731D8ED1B8004E42BE /* PZSynoAPI.swift in Sources */,
+				AE5200541DAAC0850042682C /* PZProgressBar.swift in Sources */,
+				AE37A4871D8ED1C6004E42BE /* PZSynoDownloadStationTaskListObject.swift in Sources */,
+				AE8F44B61DCFA46E006ADF86 /* PZViewItemsContainer.swift in Sources */,
+				AE37A4951D8ED1D7004E42BE /* PZSynoRequestUrl.swift in Sources */,
+				AE67D6891D90A66C0050DEF9 /* PZSynoObject.swift in Sources */,
+				AEABB6481DDCEA6F00159962 /* PZDownloadDeleteButton.swift in Sources */,
+				AE8F44B81DCFA84C006ADF86 /* PZConnectionsItemsContainer.swift in Sources */,
+				AEE6E4841DFD087F000CDB9C /* PZKeychain.swift in Sources */,
+				AE37A4811D8ED1C6004E42BE /* PZSynoApiInfoObject.swift in Sources */,
+				AE14E67F1D91BAA90096BB45 /* PZSynoEmptyObject.swift in Sources */,
+				AE22D3801DA592920090FCE0 /* PZSettingsMenu.swift in Sources */,
+				AE37A4861D8ED1C6004E42BE /* PZSynoDownloadStationTaskControlObject.swift in Sources */,
+				AEA3F6821DEE2B6100E43270 /* PZAddDownload.swift in Sources */,
+				AE37A4711D8ED1B8004E42BE /* PZAppPrefs.swift in Sources */,
+				AE37A44D1D8ED065004E42BE /* AppDelegate.swift in Sources */,
+				AEA99DC31DBA84EE00F2F242 /* PZDebugView.swift in Sources */,
+				AE13F5E81DF80F9900579099 /* PZSynchronized.swift in Sources */,
+				AE2229E31DCFC0AB00F4AF49 /* PZVolumesItemsContainer.swift in Sources */,
+				AE37A48B1D8ED1C6004E42BE /* PZSynoSystemStorageInfoObject.swift in Sources */,
+				AEEFDAFA1DE639A600DC6B6F /* PZAddDownloadViewController.swift in Sources */,
+				AE37A4831D8ED1C6004E42BE /* PZSynoCpuLoadInfoObject.swift in Sources */,
+				AEEC3BB41DDBA4090020E9B2 /* PZAddDownloadButton.swift in Sources */,
+				AE37A4851D8ED1C6004E42BE /* PZSynoDownloadStationStatisticObject.swift in Sources */,
+				AE37A4961D8ED1D7004E42BE /* PZSynoResponseObject.swift in Sources */,
+				AE0EF32F1DA3126E004834C8 /* PZButtonView.swift in Sources */,
+				AEAFF9731D96BB800076528C /* PZAppEvent.swift in Sources */,
+				AE14E67D1D919B750096BB45 /* PZSynoAuthObject.swift in Sources */,
+				AE6C68FE1DE8D7FA00A0640F /* PZAddDownloadExecuteViewController.swift in Sources */,
+				AE37A4921D8ED1D7004E42BE /* PZRequest.swift in Sources */,
+				AE37A4841D8ED1C6004E42BE /* PZSynoDownloadStationInfoObject.swift in Sources */,
+				AE1FABD91E05B1DE005354DB /* PZAuthData.swift in Sources */,
+				AE37A4741D8ED1B8004E42BE /* PZSynoDevice.swift in Sources */,
+				AE37A48A1D8ED1C6004E42BE /* PZSynoSystemStatusObject.swift in Sources */,
+				AE50460A1E254558008E1240 /* PZUtils.m in Sources */,
+				AEA8F0311DCBAAFC009A3066 /* PZConnectionItem.m in Sources */,
+				AEF6FABF1DE9C53200294A96 /* PZAddSynoDeviceViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AEE923441DF8C8E000966FC9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AEE9234B1DF8C8E000966FC9 /* AppDelegate.swift in Sources */,
+				AE29005C1DFA0D520073CAC2 /* PZAppConsts.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		AE37A4521D8ED065004E42BE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AE37A4531D8ED065004E42BE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AEA3F67C1DEE2A1B00E43270 /* AddDownload.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AEA3F67D1DEE2A1B00E43270 /* Base */,
+			);
+			name = AddDownload.storyboard;
+			sourceTree = "<group>";
+		};
+		AED789461DEDBCB900CB4F15 /* Report.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AED789471DEDBCB900CB4F15 /* Base */,
+			);
+			name = Report.storyboard;
+			sourceTree = "<group>";
+		};
+		AEE9234E1DF8C8E000966FC9 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AEE9234F1DF8C8E000966FC9 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AE37A4611D8ED065004E42BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AE37A4621D8ED065004E42BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+			};
+			name = Release;
+		};
+		AE37A4641D8ED065004E42BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "synotool-appicon";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = SynoTool/SynoTool.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 3JQHMP5J72;
+				INFOPLIST_FILE = SynoTool/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = pl.piotr.zagawa.synoTool;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = sources/PZBridgingHeader.h;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		AE37A4651D8ED065004E42BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "synotool-appicon";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = SynoTool/SynoTool.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 3JQHMP5J72;
+				INFOPLIST_FILE = SynoTool/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = pl.piotr.zagawa.synoTool;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = sources/PZBridgingHeader.h;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		AEE923531DF8C8E000966FC9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "synotool-appicon";
+				CODE_SIGN_ENTITLEMENTS = SynoToolLoginLauncher/SynoToolLoginLauncher.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 3JQHMP5J72;
+				INFOPLIST_FILE = SynoToolLoginLauncher/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = pl.piotr.zagawa.synoToolLoginLauncher;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		AEE923541DF8C8E000966FC9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "synotool-appicon";
+				CODE_SIGN_ENTITLEMENTS = SynoToolLoginLauncher/SynoToolLoginLauncher.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 3JQHMP5J72;
+				INFOPLIST_FILE = SynoToolLoginLauncher/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = pl.piotr.zagawa.synoToolLoginLauncher;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AE37A4441D8ED065004E42BE /* Build configuration list for PBXProject "SynoTool" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE37A4611D8ED065004E42BE /* Debug */,
+				AE37A4621D8ED065004E42BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AE37A4631D8ED065004E42BE /* Build configuration list for PBXNativeTarget "SynoTool" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE37A4641D8ED065004E42BE /* Debug */,
+				AE37A4651D8ED065004E42BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AEE923521DF8C8E000966FC9 /* Build configuration list for PBXNativeTarget "SynoToolLoginLauncher" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AEE923531DF8C8E000966FC9 /* Debug */,
+				AEE923541DF8C8E000966FC9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AE37A4411D8ED065004E42BE /* Project object */;
+}
